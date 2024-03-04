@@ -1,0 +1,168 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+	font-family: monospace;
+	color: #333;
+    background-color: #000000;
+
+}
+
+
+
+
+
+nav {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    color: #fff;
+    
+}
+
+a {
+    color: #fff;
+}
+
+
+
+#infos {
+    display:flex;
+    flex-direction: row;
+    
+}
+
+
+#Imagem_noticia {
+
+    padding-right: 30px;
+
+}
+
+#centro_tela {
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100%;
+
+}
+
+.quadrado {
+
+    top: 200px; 
+    height: 600px; 
+
+    /*
+    width: 979px; 
+    left: 250px;
+    */
+
+    position: absolute; 
+    width: 50%;
+
+    padding: 20px;
+    background-color: #333;
+    color: #ffffff; 
+    
+}
+
+.quadrado img {
+    /*
+    max-width: 100%; 
+    height: auto;
+    display: block; 
+    */
+
+    max-width: 80%; 
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 50px; 
+
+}
+
+
+
+
+
+
+
+.link_noticia {
+    font-size: 24px; 
+    color: rgb(255, 255, 255);
+    text-decoration: none; 
+}
+
+.link_noticia:hover {
+    text-decoration: underline; 
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .quadrado {
+        width: 80%;
+        position: absolute; 
+    }
+
+    .quadrado img {
+
+        width: 100px;
+        height: 50px;
+
+    }
+
+    .link_noticia {
+        font-size: 12px;
+    }
+
+    .botao_continuar {
+        font-size: 5px;
+        padding: 5px 20px;
+        border-radius: 10px;
+        white-space: nowrap;
+
+    }
+
+    .botao_enorme {
+        justify-content: space-between;
+    }
+}
+
+
+.botao_enorme {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.botao_continuar {
+    background-color: rgb(69, 69, 255); 
+    color: white;
+    border: none;
+    padding: 10px 200px;
+    border-radius: 50px; 
+    font-size: 12px; 
+    cursor: pointer; 
+}
+
+
+
+
+
+
+
